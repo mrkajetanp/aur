@@ -1,0 +1,6 @@
+#!/sbin/openrc-run
+
+pidfile="/opt/nessus/var/nessus/nessus-service.pid"
+command="/opt/nessus/sbin/nessus-service -q"
+start_stop_daemon_args="-b -m --pidfile ${pidfile}"
+command_background=true
